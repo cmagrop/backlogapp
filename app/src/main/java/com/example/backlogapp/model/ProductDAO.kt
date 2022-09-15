@@ -17,9 +17,8 @@ interface ProductDAO {
     fun eliminarProducto(producto:ProductModel)
 
     @Query("select * from product ")
-    fun seleccionarProductos()
-
-    fun leerTodosLosDatos(): LiveData<List<ProductModel>>
+    fun leerTodosLosDatos(): LiveData<List<ProductModel>> //retornar una respuesta de tipo
+    //LiveData<List<ProductModel>>
 
             /*
             public Dato leerTodosLosDatos();

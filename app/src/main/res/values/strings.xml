@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BacklogApp</string>
+    <string name="ingreso_producto">Formulario de ingreso</string>
+    <string name="nombre_producto">Ingrese nombre producto</string>
+    <string name="fecha_recepcion">Ingrese fecha</string>
+    <string name="codigo_producto">Ingrese código producto</string>
+    <string name="stock_minimo">Ingrese stock minimo</string>
+    <string name="precio_unitario">Ingrese precio unitario</string>
+    <string name="observaciones_producto">Ingrese observaciones</string>
 </resources>

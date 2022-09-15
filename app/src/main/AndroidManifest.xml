@@ -14,7 +14,13 @@
         android:theme="@style/Theme.BacklogApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".view.ListaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.IngresoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
