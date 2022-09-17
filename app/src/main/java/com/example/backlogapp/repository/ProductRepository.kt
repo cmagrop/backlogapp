@@ -6,6 +6,7 @@ import com.example.backlogapp.model.ProductModel
 
 class ProductRepository(val productDAO: ProductDAO) {
 
+
     val leerTodosLosDatos:LiveData<List<ProductModel>> = productDAO.leerTodosLosDatos()
 
     fun agregarProducto(product:ProductModel)
