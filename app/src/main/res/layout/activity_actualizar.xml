@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".view.ActualizarActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ingreso_producto">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/ingreso_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_producto"
+        />
+    <EditText
+        android:id="@+id/ingreso_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fecha_recepcion"
+        />
+    <EditText
+        android:id="@+id/ingreso_codigo_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/codigo_producto"
+        />
+    <EditText
+        android:id="@+id/ingreso_stock_minimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/stock_minimo"
+        />
+    <!-- Pendiente lista desplegable -->
+
+
+    <Spinner
+        android:id="@+id/spinner_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/ingreso_precio_unitario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/precio_unitario"
+        />
+
+    <EditText
+        android:id="@+id/ingreso_observaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/observaciones_producto"
+        />
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:background="#118A04"
+        android:textColor="@color/white"
+        android:onClick="accederActualizar"
+        android:text="Actualizar">
+
+    </Button>
+
+
+</LinearLayout>
